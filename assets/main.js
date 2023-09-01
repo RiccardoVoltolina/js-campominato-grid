@@ -21,6 +21,7 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento. */
 
 const containerElement = document.querySelector('.container')
 const numeri = 100
+let stampaNumeri = 0
 
 
 document.querySelector('.generate').addEventListener('click' , function () {
@@ -28,11 +29,11 @@ document.querySelector('.generate').addEventListener('click' , function () {
         const quadratoElement = document.createElement('div');
         quadratoElement.className = 'square'
         quadratoElement.innerText = i + 1
-        console.log(quadratoElement);
         containerElement.append(quadratoElement)
         quadratoElement.addEventListener('click' , function() {
         quadratoElement.className = 'blue'
-        console.log(quadratoElement);
+        console.log(quadratoElement.innerText);
+        
 
         })
     }

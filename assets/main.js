@@ -9,3 +9,11 @@ Ad esempio:
 Di cosa ho bisogno per generare i numeri?
 Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dati giusti.
 Le validazioni e i controlli possiamo farli anche in un secondo momento. */
+
+/* esecuzione */
+
+
+/* 
+-utilizzo  append per stampare gli elementi in pagina
+-creo una funzione che si attiva al click del bottone
+*/

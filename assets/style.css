@@ -28,3 +28,11 @@ body {
     background-color: blue;
    
 }
+
+.d-block {
+    display: block;
+}
+
+.none {
+    display: none;
+}

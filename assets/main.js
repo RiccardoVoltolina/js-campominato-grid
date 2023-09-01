@@ -24,23 +24,35 @@ const numeri = 100
 let stampaNumeri = 0
 
 
+
+
 document.querySelector('.generate').addEventListener('click' , function () {
+    if (containerElement.className = 'none') {
+        containerElement.className = 'container'
+    }
     for (let i = 0; i < numeri; i++) {
         const quadratoElement = document.createElement('div');
         quadratoElement.className = 'square'
         quadratoElement.innerText = i + 1
         containerElement.append(quadratoElement)
         quadratoElement.addEventListener('click' , function() {
-        quadratoElement.className = 'blue'
-        quadratoElement.addEventListener('click' , function() {
+            console.log('Il numero selezionato è il : ' + quadratoElement.innerText);
+            quadratoElement.className = 'blue'
+            quadratoElement.addEventListener('click' , function() {
             if (quadratoElement) {
                 quadratoElement.className = 'square'
             }
-            console.log(quadratoElement.innerText);
             })
+            document.querySelector('.delete').addEventListener('click' , function(){
+                if (containerElement) {
+                    containerElement.className = 'none'
+                }
+            })
+            
 
         })
     }
 })
+
 
 

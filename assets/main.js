@@ -32,8 +32,12 @@ document.querySelector('.generate').addEventListener('click' , function () {
         containerElement.append(quadratoElement)
         quadratoElement.addEventListener('click' , function() {
         quadratoElement.className = 'blue'
-        console.log(quadratoElement.innerText);
-        
+        quadratoElement.addEventListener('click' , function() {
+            if (quadratoElement) {
+                quadratoElement.className = 'square'
+            }
+            console.log(quadratoElement.innerText);
+            })
 
         })
     }

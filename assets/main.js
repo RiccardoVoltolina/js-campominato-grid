@@ -27,6 +27,7 @@ let stampaNumeri = 0
 
 
 document.querySelector('.generate').addEventListener('click' , function () {
+    console.log(containerElement + 'quando clicco');
     if (containerElement.className = 'none') {
         containerElement.className = 'container'
     }
@@ -43,16 +44,16 @@ document.querySelector('.generate').addEventListener('click' , function () {
                 quadratoElement.className = 'square'
             }
             })
-            document.querySelector('.delete').addEventListener('click' , function(){
-                if (containerElement) {
-                    containerElement.className = 'none'
-                }
-            })
+          
             
 
         })
     }
 })
-
+document.querySelector('.delete').addEventListener('click' , function(){
+    if (containerElement.className = 'container') {
+        containerElement.className = 'none'
+    }
+})
 
 

@@ -27,7 +27,6 @@ let stampaNumeri = 0
 
 
 document.querySelector('.generate').addEventListener('click' , function () {
-    console.log(containerElement + 'quando clicco');
     if (containerElement.className = 'none') {
         containerElement.className = 'container'
     }
@@ -40,13 +39,12 @@ document.querySelector('.generate').addEventListener('click' , function () {
             console.log('Il numero selezionato è il : ' + quadratoElement.innerText);
             quadratoElement.className = 'blue'
             quadratoElement.addEventListener('click' , function() {
-            if (quadratoElement) {
-                quadratoElement.className = 'square'
-            }
+                if (quadratoElement.className === 'blue') {
+                    quadratoElement.className = 'square'
+                } else {
+                    quadratoElement.className = 'blue'
+                }
             })
-          
-            
-
         })
     }
 })
